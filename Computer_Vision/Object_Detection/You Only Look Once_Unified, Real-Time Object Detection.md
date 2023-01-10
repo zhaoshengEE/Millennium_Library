@@ -1,8 +1,10 @@
-# You Only Look Once_Unified, Real-Time Object Detection^[1]^
+# You Only Look Once_Unified, Real-Time Object Detection<sup>[1]</sup>
 
 ## Mechanism
 ![Yolo Mechanism](./img/Yolo_mechanism.png)
+
 (Image Retrieved from [1])
+
 - **Preprocess**: Resize image to `448 x 448`
 - **Model Inference**:
     - Divide the input image to an `S x S` grid. The grid cell is responsible for dectecting an object whose center falls inside.
@@ -14,6 +16,7 @@
 
 ## Model Architecture
 ![Yolo Architecture](./img/Yolo_architecture.png)
+
 (Image Retrieved from [1])
 
 
