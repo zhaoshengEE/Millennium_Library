@@ -1,0 +1,9 @@
+# A Common-Sense Guide to Data Structures and Algorithms, Second Edition: Level Up Your Core Programming Skills
+
+![Book Cover](./img/book_cover.jpg)
+
+(Image Retrieved from [Amazon](https://www.amazon.ca/Common-Sense-Guide-Structures-Algorithms-Second/dp/1680507222/ref=rvi_sccl_1/147-8772558-6073865?pd_rd_w=1eZ4e&content-id=amzn1.sym.8b4d8c20-8e51-4634-a76f-c00a1995a502&pf_rd_p=8b4d8c20-8e51-4634-a76f-c00a1995a502&pf_rd_r=8VVNM444G7DZHPRWKFS7&pd_rd_wg=5N5gU&pd_rd_r=1716398e-cfb4-4eca-ae02-0333f2c1a9ba&pd_rd_i=1680507222&psc=1))
+
+| Chapter | Description |
+| ---------------------- | ---------------------- |
+| [1. Why Data Structures Matter](Chapter 01 Why Data Structures Matter.md) | Analyze two data structures: `arrays` and `sets` |
