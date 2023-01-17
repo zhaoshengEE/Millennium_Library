@@ -6,4 +6,4 @@
 
 | Chapter | Description |
 | ---------------------- | ---------------------- |
-| [1. Why Data Structures Matter](Chapter 01 Why Data Structures Matter.md) | Analyze two data structures: `arrays` and `sets` |
+| [1. Why Data Structures Matter](Chapter%2001%20Why%20Data%20Structures%20Matter.md) | Analyze two data structures: `arrays` and `sets` |
