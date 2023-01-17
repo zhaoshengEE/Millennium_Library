@@ -22,26 +22,27 @@
 - **Delete**: Remove a value from the data structure.
 
 
-## Number of Steps for Each Operation and Data Structure.
+## Number of Steps for Each Operation and Data Structure
 
 Let's say there are `N` cells in the data structure, and we solely consider the worst case.
 
-|        | **Read** | **Search** | **Insert** | **Delete** |
-| :----: |    :----:   |    :----:     |    :----:     |
-| **Array** | 1       | N<sup>1</sup>  | N + 1<sup>2</sup>  | N<sup>1</sup>  |
-| **Set**   | 1       | N<sup>1</sup>  | 2N + 1<sup>3</sup> | N <sup>1</sup> |
-<sup>1</sup>
+|       | Read | Search     | Insert |  Delete     |
+| :----:        |    :----:   |          :----: |    :----:   |          :----: |
+| **Array**      | 1              | N<sup><1></sup>  | N + 1<sup><2></sup>  | N<sup><4></sup>  |
+| **Set**   | 1        | N<sup><1></sup>      | 2N + 1<sup><3></sup>  | N<sup><4></sup>  |
 
 *Notes*:
-1. Iterate through the whole data structure and find out the value's location.
 
-2. When inserting a value at the beginning of an array, we need to shift the `N` elements to the right by one cell, and then insert the new value.
+<1>. Iterate through the whole data structure and find out the value's location.
 
-3. When inserting a value at the beginning of an array, **since Set has the constraint of barring duplicates**, we need to go through the `N` elements and make sure the inserted value does not exits in the set. Only after that can we shift the `N` elements to the right by one cell, and then insert the new value.
+<2>. When inserting a value at the beginning of an array, we need to shift the `N` elements to the right by one cell, and then insert the new value.
 
-4. When deleting a value at the beginning of an array or a set, we need to remove the first element first and shift the remaining `N - 1` elements to the left by one cell.
+<3>. When inserting a value at the beginning of an array, **since Set has the constraint of barring duplicates**, we need to go through the `N` elements and make sure the inserted value does not exits in the set. Only after that can we shift the `N` elements to the right by one cell, and then insert the new value.
 
+<4>. When deleting a value at the beginning of an array or a set, we need to remove the first element first and shift the remaining `N - 1` elements to the left by one cell.
 
+> Computer checks each cell one at a time is called `linear search`.
+    
 ## Reference
 
 [1] “Computer memory address,” Computer memory address basics. [Online]. Available: https://www.log2base2.com/C/pointer/computer-memory-address-basics.html. [Accessed: 16-Jan-2023]. 
