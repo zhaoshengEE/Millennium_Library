@@ -7,3 +7,4 @@
 | Chapter | Description |
 | ---------------------- | ---------------------- |
 | [1. Why Data Structures Matter](Chapter%2001%20Why%20Data%20Structures%20Matter.md) | Analyze two data structures: `arrays` and `sets` |
+| [2. Why Algorithms Matter](Chapter%2002%20Why%20Algorithms%20Matter.md) | Introduce another data structure: `ordered array` and compare two algorithms: `linear search` and `binary search` |
