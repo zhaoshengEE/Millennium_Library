@@ -3,13 +3,13 @@
 
 ## Soul of Big O
 
-- How the number of steps increase as the data changes
+- How the number of steps increase as the data changes.
 
 
-## Key Questions of O(N)
+## Key Questions of Big O
 
-- If there are N data elements, how many steps will the algorithm take, or
-- If passing in the number N, how many steps will the algorithm take.
+- If there are N data elements, how many steps will an algorithm takes, or
+- If passing in the number N, how many steps will an algorithm takes.
 
 
 ## Three Types of Big O
