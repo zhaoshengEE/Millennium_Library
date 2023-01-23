@@ -8,5 +8,5 @@
 | ---------------------- | ---------------------- |
 | [1. Why Data Structures Matter](Chapter%2001%20Why%20Data%20Structures%20Matter.md) | Analyze two data structures: `arrays` and `sets` |
 | [2. Why Algorithms Matter](Chapter%2002%20Why%20Algorithms%20Matter.md) | Introduce another data structure: `ordered array` and compare two algorithms: `linear search` and `binary search` |
-| [3. O Yes! Big O Notation](Chapter%2003%20O%20Yes!%20Big%20O%20Notation.md) | Introduce `O(N)`, `O(1)`, and `O(logN)` |
-| [4 Speeding Up Your Code with Big O](Chapter%2004%20Speeding%20Up%20Your%20Code%20with%20Big%20O.md) | Introduce `bubble sort` whose time complexity is `O(N<sup>2</sup>)`. Optimize duplication checking algorithm from `O(N<sup>2</sup>)` to `O(N)` by compromising space complexity |
+| [3. O Yes! Big O Notation](Chapter%2003%20O%20Yes!%20Big%20O%20Notation.md) | Introduce O(N), O(1), and O(logN) |
+| [4 Speeding Up Your Code with Big O](Chapter%2004%20Speeding%20Up%20Your%20Code%20with%20Big%20O.md) | Introduce `bubble sort` whose time complexity is O(N<sup>2</sup>). Optimize duplication checking algorithm from O(N<sup>2</sup>) to O(N) by compromising space complexity |
