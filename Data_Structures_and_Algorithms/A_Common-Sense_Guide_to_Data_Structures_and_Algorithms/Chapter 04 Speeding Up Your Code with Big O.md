@@ -3,7 +3,7 @@
 
 ## Bubble Sort
 
-- In each pass-through of the array, through the combination of `comparison` and `swap` steps, bubbling up the highest unsorted element to its correct position (a.k.a. the last index of each iteration round).
+- In each pass-through of the array, through the combination of `comparison` and `swap` steps, bubbling up the **highest unsorted element** to its correct position (a.k.a. the last index of each iteration round).
 - Keep on iterating through the array until we have an iteration in which no `swap` is executed.
 - The algorithm has a time complexity of O(N<sup>2</sup>), which is considered to be `quadratic time` and a relatively inefficient algorithm.
 
