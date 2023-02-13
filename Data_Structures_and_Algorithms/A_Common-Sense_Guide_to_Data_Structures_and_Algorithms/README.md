@@ -15,4 +15,4 @@
 | 7. Big O in Everyday Code | Introduce a bunch of examples with analysis on time complexity of each code. Plus, O(N * M) can be considered as the range between O(N) and O(N<sup>2</sup>) |
 | [8. Blazing Fast Lookup with Hash Tables](Chapter%2008%20Blazing%20Fast%20Lookup%20with%20Hash%20Tables.md) | Introduce `hash table` which can be used to look up data in 0(1), as long as the key is known. |
 | [9. Crafting Elegant Code with Stacks and Queues](Chapter%2009%20Crafting%20Elegant%20Code%20with%20Stacks%20and%20Queues.md) | Introduce `Stack` and `Queue`, which are utilized to handle temporary data in algorithms |
-| [10. Recursively Recurse with Recursion](Chapter%2010%20Recursively%20Recurse%20with%20Recursion.md) | Introduce `recursion` and `call stack` and demonstrat how to read recursive code |
+| [10. Recursively Recurse with Recursion](Chapter%2010%20Recursively%20Recurse%20with%20Recursion.md) | Introduce `recursion` and `call stack`. Demonstrate how to read recursive code |
