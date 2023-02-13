@@ -48,4 +48,4 @@ STATUS_CODES = {"200": "OK", "301": "Moved Permanently", "401": "Unauthorized", 
 
 ### Using It as an Index
 
-Hash table tells us wheter a specific item is contained within the array. Please refer to the [exercise questions of this chapter](./exercises/Chapter08)
+Hash table tells us wheter a specific item is contained within the array. Please refer to the [exercise questions of this chapter](./exercises/Chapter08/)
