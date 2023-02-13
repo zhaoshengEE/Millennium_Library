@@ -6,4 +6,4 @@
 
 | Chapter | Description |
 | ---------------------- | ---------------------- |
-| [1. Introduction](Chapter_01_Introduction.md) | Introduce some basic concepts regarind distributed systems |
+| [1. Introduction](Chapter_01_Introduction.md) | Introduce some basic concepts regarding distributed systems |
