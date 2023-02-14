@@ -16,3 +16,4 @@
 | [8. Blazing Fast Lookup with Hash Tables](Chapter%2008%20Blazing%20Fast%20Lookup%20with%20Hash%20Tables.md) | Introduce `hash table` which can be used to look up data in 0(1), as long as the key is known. |
 | [9. Crafting Elegant Code with Stacks and Queues](Chapter%2009%20Crafting%20Elegant%20Code%20with%20Stacks%20and%20Queues.md) | Introduce `Stack` and `Queue`, which are utilized to handle temporary data in algorithms |
 | [10. Recursively Recurse with Recursion](Chapter%2010%20Recursively%20Recurse%20with%20Recursion.md) | Introduce `recursion` and `call stack`. Demonstrate how to read recursive code |
+| [11. Learning to Write in Recursive](Chapter%2011%20Learning%20to%20Write%20in%20Recursive.md) | Bring in `bottom-up` and `top-down` processes to solve recursion problems. Illustrate the method to write recursive algorithm. Talk about `Staircase Problem` in 1D and `Unique Path Problem` in 2D. |
