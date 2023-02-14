@@ -7,6 +7,10 @@
 - Keep on iterating through the array until we have an iteration in which no `swap` is executed.
 - The algorithm has a time complexity of O(N<sup>2</sup>), which is considered to be `quadratic time` and a relatively inefficient algorithm.
 
+![Bubble Sort](./img/bubble_sort.gif)
+
+(Image Retrieved from [this link](https://commons.wikimedia.org/wiki/File:Bubble_sort_with_flag.gif))
+
 
 ## Optimize An Algorithm from O(N<sup>2</sup>) to O(N)
 

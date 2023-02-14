@@ -12,6 +12,10 @@
     - *NOTE*: we need to finish conducting the shifting phase when we start at the final index.
 
 
+![Insertion Sort](./img/insertion_sort.gif)
+
+(Image Retrieved from [this link](https://www.pinterest.ca/pin/420734790180626311/))
+
 ## Another Big O Major Rule
 
 > Big O Notation only takes into account the highest order of N when we have multiple orders added together.

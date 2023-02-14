@@ -7,6 +7,10 @@
 - Swap the **lowest value** element with the one we begin with our pass-through.
 - Repeat this process until we start at the end of the array.
 
+![Selection Sort](./img/selection_sort.gif)
+
+(Image Retrieved from [this link](https://stackabuse.com/selection-sort-in-javascript/))
+
 
 ## Big O Categories
 
