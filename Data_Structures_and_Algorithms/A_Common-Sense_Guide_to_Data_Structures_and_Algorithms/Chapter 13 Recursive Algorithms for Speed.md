@@ -33,6 +33,8 @@ Once each parition is done, the pivot ends up in the appropriate position. The n
 
 ![Quicksort](./img/quicksort.gif)
 
+(Image Retrieved from [this link](https://levelup.gitconnected.com/sorting-algorithms-selection-sort-bubble-sort-merge-sort-and-quicksort-75479f8f80b1))
+
 
 For `Quicksort` and `Partition` algorithms, please refer to the [Exercise Question 1 in this chapter](./exercises/Chapter%2013/Q1.py)
 
