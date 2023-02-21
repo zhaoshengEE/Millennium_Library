@@ -17,6 +17,7 @@ BST abides by the following tso rules:
 Example of BST:
 
 ![Binary Search Tree](./img/binary_search_tree.png)
+
 (Image Retrieved from [this link](https://www.javatpoint.com/binary-search-tree))
 
 
