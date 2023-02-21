@@ -31,8 +31,8 @@ Example of BST:
     > - If the node being deleted has no children, simply delete it.
     > - If the node being deleted has one child, delete the node and plug the child into the spot where the deleted node was.
     > - When deleting a node with two children, replace the deleted node with the successor node.
-        > - Find the successor node: visit the right child of the deleted node, and keep visiting the left child of each subsuquent child until there are no more left children. The bottom value is the successor node.
-        > - If the successor node has a right child, after copying the successor node value to the delete node, put the right child of the successor node into the left child of the parent of the successor node.
+    >   - Find the successor node: visit the right child of the deleted node, and keep visiting the left child of each subsuquent child until there are no more left children. The bottom value is the successor node.
+    >   - If the successor node has a right child, after copying the successor node value to the delete node, put the right child of the successor node into the left child of the parent of the successor node.
 - BST is an efficient choice for scenarios in which we need to store and manipulate ordered data, especially when we will be modifying the data often.
 - The operations in BST, including search, insertion, deletion, and traversal, makes heavy use of `recursion`. 
 
