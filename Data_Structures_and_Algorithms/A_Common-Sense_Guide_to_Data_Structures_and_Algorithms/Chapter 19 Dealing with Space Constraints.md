@@ -1,4 +1,4 @@
-# Chapter 18. Dealing with Space Constraints
+# Chapter 19. Dealing with Space Constraints
 
 The key question of Big O for space complexity:
 
