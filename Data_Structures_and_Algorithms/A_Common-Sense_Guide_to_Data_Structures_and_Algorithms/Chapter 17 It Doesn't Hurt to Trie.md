@@ -7,7 +7,7 @@
 - We need to implement `*` in the trie to indicate when parts of a word are also words themselves.
 
 
-### Trie Search
+## Trie Search
 
 *Time Complexity:* O(K), where K is the size of the input.
 
@@ -23,7 +23,7 @@ Here using O(N) is kind of misleading, since N usually refers to the number of d
 For the implementation of trie search, please refer to the [Exercise Question in this chapter](./exercises/Chapter%2017/Q3%2C4.py)
 
 
-### Trie Insertion
+## Trie Insertion
 
 *Time Complexity:* O(K)
 
