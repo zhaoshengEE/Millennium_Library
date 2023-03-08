@@ -25,3 +25,4 @@
 | [17. It Doesn't Hurt to Trie](Chapter%2017%20It%20Doesn't%20Hurt%20to%20Trie.md) | Introduce `Trie` which is a special tree-based structure that is a ideal for test-based features, such as autocomplete nad autocorrect.  |
 | [18. Connecting Everything with Graphs](Chapter%2018%20Connecting%20Everything%20with%20Graphs.md) | Introduce `Graph` which specializes in relationships and convey how data is connected. Also introduce `Depth-First Search`, `Breadth-First Search`, and `Dijkstra's Algorithm`.  |
 | [19. Dealing with Space Constraints](Chapter%2019%20Dealing%20with%20Space%20Constraints.md) | Introduce `Space Complexity` which is another factor to be taken into account, in addition to `Time complexity`, when analyzing an algorithm  |
+| [20. Techniques for Code Optimization](Chapter%2020%20Techniques%20for%20Code%20Optimization.md) | Introduce some techniques for optimizing algorithm  |
