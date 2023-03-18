@@ -1,6 +1,6 @@
 # Ultimate AWS Certified Cloud Practitioner - 2023
 
-This is my course note when I am taking the course offered by Stephane Maarek on [Udemy](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+This folder contains my course note when I am taking the course offered by Stephane Maarek on [Udemy](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
 ![Course Front Page](./img/course_front_page.jpg)
 
