@@ -27,6 +27,7 @@
     - Example: AWS CLI is built on AWS SDK for Python
 
 Access Key ID ~= username
+
 Secret Access Key ~= password
 
 
