@@ -6,6 +6,12 @@ This folder contains my course note when I am taking the course offered by Steph
 
 (Image Retrieved from [YouTube](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNhfJXLmJyT8&psig=AOvVaw3NUABM0cTgVDtu1rdAinhW&ust=1678778002783000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKj4sMat2P0CFQAAAAAdAAAAABAE))
 
+- **Domain 1**: Cloud Concepts
+- **Domain 2**: Security and Compliance
+- **Domain 3**: AWS Technology
+- **Domain 4**: Billing and Pricing
+
+
 | Section | Description |
 | ---------------------- | ---------------------- |
 |  |  |
