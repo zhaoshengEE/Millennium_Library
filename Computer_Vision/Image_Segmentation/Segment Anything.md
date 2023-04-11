@@ -45,3 +45,4 @@ Overall, SAM is designed for generality and breadth of use rather than high IoU 
 
 ## References
 [1] A. Kirillov et al., “Segment Anything,” arXiv [cs.CV], 2023. [arXiv](https://arxiv.org/pdf/2304.02643.pdf)
+
