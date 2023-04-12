@@ -6,21 +6,21 @@
 
 - Network protocols determine how data is processed and formatted. 
 - The protocols are arranged in a stack, where each layer is built on the abstraction provided by the layer below.
-- Lower layer is close to the hardware.
+- Lower layer is closer to the hardware.
 
 ![internet_protocol_suite](./img/internet_protocol_suite.jpg)
 
 (Image Retrieved from [1])
 
-### Reliable Links - TCP
+## Reliable Links - TCP
 
 The nodes in a system that communicate with each other over the network.
 
-### Coordination
+## Coordination
 
 Some form of coordination making individual nodes work in unison towards a shard objective.
 
-### Scalability
+## Scalability
 
 For a system to be scalable, a load increase should not degrade the system performance. This also requires increasing the system capaticity at will.
 
@@ -31,7 +31,7 @@ For a system to be scalable, a load increase should not degrade the system perfo
 - *Scaling up*: Buying more expensive hardware with better performance.
 - *Scaling out*: Adding more commodity machines to the system and having them work together.
 
-### Resiliency
+## Resiliency
 
 A distributed system is deemed as resilient when it can continue to do its job even then failures happen.
 
@@ -49,7 +49,7 @@ Availablity is often described with nines:
 | 99.99% ("four nines")      | 8.64 seconds  |
 | 99.999% ("five nines")      | 864 millisecnds  |
 
-### Maintainability
+## Alternative of TCP - UDP
 *** 
 
 > The business logic does not depend on technical details; instead, the technical details depend on the business logic.
