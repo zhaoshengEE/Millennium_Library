@@ -13,7 +13,7 @@
 (Image Retrieved from [1])
 
 
-## Reliable Links - TCP
+## Reliable Links - `Transmission Control Protocol (TCP)`
 
 - IP does not guarantee the data sent over the internet will arrive at its destination, whereas TCP does.
 - TCP partitions a byte stream into discrete packets called `segments`. And the receiver uses a checksum to verify the integrity of a delivered segment.
@@ -39,6 +39,13 @@
     - Bootstrap custom protocols which provide some of the stability and reliability guarantess that TCP does.
     - Use case: In gaming snapshot transimission, TCP retransmitts the missing snapshot to the client, which degrades user experience as the game evolves in real-time,but UDP does not.
 
+
+## Secure Links - `Transport Layer Security (TLS)`
+
+- TLS runs on top of TCP and protects communication channels against interception from a middleman.
+- TLS provides `encryption`, `authentication`, `integrity`.
+- TLS uses `certificate` to prove the ownership of a public key. The certificate issuing entity is called `certificate authority (CA)`.
+- TLS verfies the integrity of the data by calculating a message digest.
 
 ## References
 [1] “The internet protocol suite (article),” Khan Academy. [Online]. Available: https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:the-internet-protocol-suite/a/the-internet-protocols. [Accessed: 11-Apr-2023]. 
