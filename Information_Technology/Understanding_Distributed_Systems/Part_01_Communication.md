@@ -12,49 +12,35 @@
 
 (Image Retrieved from [1])
 
+
 ## Reliable Links - TCP
 
-The nodes in a system that communicate with each other over the network.
+- IP does not guarantee the data sent over the internet will arrive at its destination, whereas TCP does.
+- TCP partitions a byte stream into discrete packets called `segments`. And the receiver uses a checksum to verify the integrity of a delivered segment.
+- The operating system manages the connection state on sender and receiver through a `socket`.
+    - A network socket is a software structure for sending and receiving data across the network.
+    - The properties and structure of a socket are defined by an `application programming interface (API)`.
+- TCP uses `Three-way handshake` to establish a new connection
 
-## Coordination
+![three-way_handshake](./img/Three-way_handshake.gif)
 
-Some form of coordination making individual nodes work in unison towards a shard objective.
+(Image Retrieved from [2])
 
-## Scalability
+- The processes typically maintain connection pools to recreate connections repeatedly
+    - This avoids paying the `cold-start tax`
+    - This also handles the delayed segments
+- At the receiver side, there is a `receiver buffer` that stores the TCP segments waiting to be processed.
+    - Knowing hte buffer size from the receiver, the sender avoids sending more data than can fit in the receiver's buffer.
+- At the sender side, there is a `congestion window` which refers to the total number of segments that can be sent without acknowledgement from the other side.
+    - Bandwidth = Window Size / RTT (Round-trip time)
+    - The shorter the RTT, the better the network's bandwidth is utilized. That is why we prefer putting servers geographically close to the clients.
+- Limitations of TCP: lower bandwidth and higher latencies.
+- Alternative of TCP - `User Datagram Protocol (UDP)`
+    - Bootstrap custom protocols which provide some of the stability and reliability guarantess that TCP does.
+    - Use case: In gaming snapshot transimission, TCP retransmitts the missing snapshot to the client, which degrades user experience as the game evolves in real-time,but UDP does not.
 
-For a system to be scalable, a load increase should not degrade the system performance. This also requires increasing the system capaticity at will.
-
-- *Throughput*: The number of requests processed per second.
-- *Response Time*: The time elapsed in seconds between sending a request to a system and receive a response.
-- *Capacity*: The maximum load the system can withstand.
-
-- *Scaling up*: Buying more expensive hardware with better performance.
-- *Scaling out*: Adding more commodity machines to the system and having them work together.
-
-## Resiliency
-
-A distributed system is deemed as resilient when it can continue to do its job even then failures happen.
-
-- *System Availability*: The percentage of time the system is available for use.
-- *Uptime*: The amount of time the system can serve requests.
-- *Downtime*: The amoount of time the system cannot serve requests.
-
-Availablity is often described with nines:
-
-|   Availability %    | Downtime per day |
-| :----:        |    :----:   |
-| 90% ("one nine")      | 2.40 hours       |
-| 99% ("two nines")      | 14.40 minutes   |
-| 99.9% ("three nines")      | 1.44 minutes   |
-| 99.99% ("four nines")      | 8.64 seconds  |
-| 99.999% ("five nines")      | 864 millisecnds  |
-
-## Alternative of TCP - UDP
-*** 
-
-> The business logic does not depend on technical details; instead, the technical details depend on the business logic.
-
-In this book, the process running a service is referred as a `server`, and the process sending a request to a server is referred as a `client`. Sometimes, a process can be both a `server` and a `client`.
 
 ## References
 [1] “The internet protocol suite (article),” Khan Academy. [Online]. Available: https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:the-internet-protocol-suite/a/the-internet-protocols. [Accessed: 11-Apr-2023]. 
+
+[2] R. Hunt, “Transmission control protocol/internet protocol (TCP/IP),” Encyclopedia of Information Systems, pp. 489–510, 2003. 
