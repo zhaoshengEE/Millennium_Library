@@ -8,7 +8,7 @@
 - The CCFont model can be adpoted as a multi-lingual font-generation model, that can be applied to all languages, which can be divided into components, such as Traditional Chinese, Simplified Chinese, Korean, Thai.
 
 
-## Mechanisim
+## Mechanism
 
 **The CCFont model obtains style information from the components, not from the glyphs.**
 
