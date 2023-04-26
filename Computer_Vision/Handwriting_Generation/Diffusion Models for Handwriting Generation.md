@@ -24,7 +24,7 @@ A diffusion model consists of two processes:
     - Incorporate writer stylistic features from `offline data`.
     - **Generate samples in `online format`.**
     - Eliminate the need for text recognition, text-based, style-based, or adversarial loss functions or the training of auxiliary network.
-- Plus, this paper proposes a sampling method, which first estimates $\hat{y}_{0}$ from $y_{t}$, then finds $y_{t-1}$ based on $\hat{y}_{0}$. This method leads to more realistic samples.
+- Plus, this paper proposes a sampling method, which first estimates $\hat{y_{0}}$ from $y_{t}$, then finds $y_{t-1}$ based on $\hat{y}_{0}$. This method leads to more realistic samples.
 
 
 ## Model Architecture
