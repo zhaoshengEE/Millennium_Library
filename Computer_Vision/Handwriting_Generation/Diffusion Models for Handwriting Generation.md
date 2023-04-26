@@ -30,12 +30,12 @@ A diffusion model consists of two processes:
 ## Model Architecture
 
 Each data point $x_{t}$ is composed of:
-    - A real valued pair representing the `pen offset` from the previous stroke in the `x` and `y` directions
-    - A binary entry for pen-down (0) or pen-up (1)
+- A real valued pair representing the `pen offset` from the previous stroke in the `x` and `y` directions
+- A binary entry for pen-down (0) or pen-up (1)
 
 This paper splits each data point $x_{t}$ into two sequences of equal length:
-    - $y_{t}$: The real valued pen strokes
-    - $d_{t}$: Ground-truth of whether the pen was down
+- $y_{t}$: The real valued pen strokes
+- $d_{t}$: Ground-truth of whether the pen was down
 
 - **Inputs**:
     - An `offline image` containing the information of writer's style (s)
