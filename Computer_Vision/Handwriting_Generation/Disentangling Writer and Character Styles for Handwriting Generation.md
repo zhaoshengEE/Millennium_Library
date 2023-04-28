@@ -2,7 +2,7 @@
 
 ## Motivation and Contributions
 
-- `RNN-based` methods only focus on capturing writer's overall writing style, overlooking hte subtle style inconsistencies between characters produced by the same writer.
+- `RNN-based` methods only focus on capturing writer's overall writing style, overlooking the subtle style inconsistencies between characters produced by the same writer.
     - Each row in the figure below depicts the characters written by the same person.
     - Despite sharing similar overall writing style (i.e. `glyph slant`), subtle character-wise style discrepancy can still be observed among them (i.e. `stroke length`, `location`, and `curvature`)
 
