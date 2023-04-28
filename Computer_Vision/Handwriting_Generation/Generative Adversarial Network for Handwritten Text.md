@@ -8,7 +8,7 @@
 
 - This paper proposes a handwriting generative adversarial network (HWGANs) which can generate more natural and realistic English handwritten text.
     - Design a discriminator consisting of a `CNN-LSTM` based feature extraction, followed by an auxiliary feedforward neural network.
-    - Combine the `prediction network` and `synthesis network` proposed by [Alex Grave](https://arxiv.org/abs/1308.0850)<sup>[2]</sup> as the generator.
+    - Use the `prediction network` or `synthesis network` proposed by [Alex Grave](https://arxiv.org/abs/1308.0850)<sup>[2]</sup> as the generator.
 
 
 ## Proposed Approach
