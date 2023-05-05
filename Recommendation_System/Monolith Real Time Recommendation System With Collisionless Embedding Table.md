@@ -5,8 +5,9 @@
 
 The ubiquitous deep learning frameworks, such as TensorFlow or PyTorch, fall short of business demands in recommendation scenarios, because:
 - Tweaking systems based on static parameters and dense computations is detrimental to model quality.
-- Those framewors completely separate batch-training stage and serving stage. 
+- Those frameworks completely separate batch-training stage and serving stage. 
 
+This paper contributes to
 - Present a recommendation model named `Monolith` which is tailored for online training.
 - Craft a collisionless embedding table which has `Cuckoo Hashmap` under the hood.
 - Provide a production-ready online training architecture with high fault-tolerance.
