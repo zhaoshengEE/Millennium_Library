@@ -33,7 +33,7 @@
 - Reduce the time to make IT resources available to developers from weeks to just minutes
 
 
-## ELB (Elastic Load Balancer)
+## Elastic Load Balancer (ELB)
 
 - Redirect/Forward internet traffic to multiple servers (`EC2 Instances`) downstream
 - Do regular health checks on instances and handle failures of downstream instances
