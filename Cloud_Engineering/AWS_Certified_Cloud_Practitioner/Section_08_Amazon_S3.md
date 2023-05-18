@@ -1,6 +1,6 @@
 # Section 8. Amazon S3
 
-Amazon S3 is advertised as infinitely scaling storage.
+Amazon S3 (Simple Storage Service) is advertised as infinitely scaling storage.
 
 ## Buckets & Objects
 
