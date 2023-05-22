@@ -94,7 +94,7 @@ AWS has 3 pricing fundamentals following the pay-as-you-go pricing model
 
 - AWS has global services:
     - Identity and Access Management (IAM)
-    - Route 53 (DSN service)
+    - Route 53 (DNS service)
     - CloudFront (Content Delivery Network)
     - WAF (Web Application Firewall)
 
