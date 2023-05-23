@@ -2,7 +2,8 @@
 
 
 - The data engineering process encompasses
-    - Create data pipelines that automate the transfer of data from place to place.
+- Create data pipelines that 
+    - Automate the transfer of data from place to place.
     - Transform the data into a specific format for a certain type of analysis.
 - The data engineering is a **practice** more than a **specific technology**.
 
