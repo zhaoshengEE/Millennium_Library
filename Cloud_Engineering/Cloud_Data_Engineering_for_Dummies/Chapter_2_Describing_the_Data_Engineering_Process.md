@@ -15,7 +15,7 @@
 - Batch and streaming data
 
 
-## Collecting nad Ingesting Data
+## Collecting and Ingesting Data
 
 > It’s much simpler to manage your data when you can consolidate it all in one location as a single source of truth.
 
