@@ -30,5 +30,4 @@ The term `schema` refers to the organization of data as a blueprint of how the d
 - `Data latency`: The time delay between when data is generated and when it is available for use.
 - `Change data capture (CDC)`: A capability simplifies data pipelines by recognizing the changes since the last data load, thereby allowing analytic databases to stay current without reloading the entire data set.
 - `Data orchestration tools`: Structure pipeline tasks such as scheduling jobs, executing workflows, and coordinating dependencies among tasks.
-- `Augmenting`: pulling in data from other sources
 
