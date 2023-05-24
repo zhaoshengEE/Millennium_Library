@@ -16,8 +16,8 @@
 
 ## Cost Matrix
 
-- Given two time series $$X$$ and $$Y$$, a two-dimentional `cost matrix` D is constructed, $$D(i, j)$$ denotes the minimum distance between $$X_{i}$$ and $$Y_{j}$$
-- $$D(i, j) = Dist(i, j) + \max(D(i - 1, j), D(i, j - 1), D(i - 1, j - 1))$$
+- Given two time series $X$ and $Y$, a two-dimentional `cost matrix` D is constructed, $D(i, j)$ denotes the minimum distance between $X_{i}$ and $Y_{j}$
+- $D(i, j) = Dist(i, j) + \max(D(i - 1, j), D(i, j - 1), D(i - 1, j - 1))$
 - The cost matrix is filled one column at a time from the bottom up, from left to right.
 - After the entire matrix is filled, a `warp path` can be found in reverse order starting at D(X, Y) through greedy search.
 
