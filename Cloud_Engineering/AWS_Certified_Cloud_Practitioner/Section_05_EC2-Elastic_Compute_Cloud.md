@@ -53,7 +53,7 @@
     - Access to Ports
     - Authorized IP ranges - IPV4 and IPV6
     - Control of inbound network (from other to the instance)
-    - Contorl of the outbound network (from the instance to other)
+    - Control of the outbound network (from the instance to other)
 - If your application is not accessible (time out), then it is a security group issue. While if your application gives a "connnection refused" error, then it is an application error or it is not launched
 - All inbound traffic is blocked by default. All outbound traffic is authorized by default
 
@@ -81,7 +81,7 @@
     - Reservation Period: 1 year or 3 years
     - Payment Options: No Upfront, Partial Upfront, All Upfront
     - Reserved Instance's Scope: Regional or Zonal (reserve capacity in an AZ)
-    - You can but and sell in the Reserved Instance Marketplace
+    - You can buy and sell in the Reserved Instance Marketplace
     - **Recommended for steady-state usage applications (think databases)**
     - **Convertible Reserved Instance**
         - Can change the EC2 instance type during the reservation
