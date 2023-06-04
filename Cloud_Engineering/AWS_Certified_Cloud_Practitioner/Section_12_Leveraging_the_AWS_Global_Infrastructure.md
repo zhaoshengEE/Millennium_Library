@@ -20,7 +20,7 @@ A `global application` is an application deployed in `Regions` and / or `Edge Lo
 | :----: | :----: |
 | ![Multi_Region_Active_Passive](./img/multi_region_active_passive.jpg)| ![Multi_Region_Active_Active](./img/multi_region_active_active.jpg) |
 
-(Image Retrieved from [1])
+(Images Retrieved from [1])
 
 
 ## Amazon Route 53
@@ -42,7 +42,7 @@ A `global application` is an application deployed in `Regions` and / or `Edge Lo
 | :----: | :----: |
 | ![Latency_Routing_Policy](./img/latency_routing_policy.jpg)| ![Failover_Routing_Policy](./img/failover_routing_policy.jpg) |
 
-(Image Retrieved from [1])
+(Images Retrieved from [1])
 
 *Weighted Routing Policy: route traffic to multiple resources in proportions that you specify*
 
