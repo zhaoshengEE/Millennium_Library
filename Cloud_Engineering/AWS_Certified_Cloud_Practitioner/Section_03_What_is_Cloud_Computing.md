@@ -38,7 +38,7 @@ Network is working like a *post office* delivering requests and responses betwee
     - Measured service (Usage is measured)
 
 - Six Advantages of Cloud Computing
-    - Trade capital expense for operation expense
+    - Trade capital expense for variable expense
     - Benefit from massive economies of scale
     - Stop concerning of capacity
     - Increase speed and agility
