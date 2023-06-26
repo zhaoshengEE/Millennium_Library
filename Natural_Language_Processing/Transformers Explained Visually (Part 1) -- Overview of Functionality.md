@@ -9,6 +9,11 @@
 *NOTE:* Some Transformer architectures have no `Decoder` and rely only on the `Encoder`
 - `Attention` is the core of the Transformer
 
+![transformer_architecture](./img/transformer_architecture.png)
+
+(Image Retrieved from [1])
+
+
 ## Attention
 
 - When processing a word, Attention enables the model to focus on other words that are closely related to that word
