@@ -18,7 +18,7 @@
 
 - When processing a word, Attention enables the model to focus on other words that are closely related to that word
 - `Self-Attention` relates every word to every other word in the input sequence
-- Transformers include multiple `attention scores` for each word
+- Transformers include multiple `attention scores` for each word (`Multi-head Self-attention Layer`)
 
 ![multiple_attention_scores](./img/multiple_attention_scores.png)
 
