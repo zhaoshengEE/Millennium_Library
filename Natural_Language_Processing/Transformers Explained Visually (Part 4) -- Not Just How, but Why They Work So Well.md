@@ -1,46 +1,42 @@
-# Transformers Explained Visually (Part 3) Multi-head Attention, deep dive<sup>[1]</sup>
+# Transformers Explained Visually (Part 4): Not Just How, but Why They Work So Well<sup>[1]</sup>
 
 
-## Attention Layer
+## What we want for the Transformer
 
-- **Self-attention in the Encoder / Decoder**
-    - The encoded representation of each word in the `input sequence` / `target sequence`, which captures the meaning and position of each word, is the input of `Query`, `Key`, `Value` in the `Self-attention` in the first `Encoder` / `Decoder`
-    - The output from the `Self-attention` in the first `Encoder` / `Decoder` entails an encoded representation for each word in the `input sequence` / `target sequence`, along with the `attention score` for each word
-- **Encoder-Decoder-attention in the Decoder**: 
-    - Generate a representation of both the `input sequence` and `target sequence` 
-    - Produce `attention scores` for each `target sequence` word, which also captures the influence of the `attention scores` from the `input sequence`
+- We want the `attention score` to be high for words that are relevant in the sentence
+- We want the `attention score` to be low for words that are unrelated in the sentence
+- Based on the two objectives above, the transformer learns the weights of `embedding`, `position encoding` and `linear layer`, thereby generating the `word vectors` are more aligned if the words are relevant
 
 
-## Attention Hyperparameters
+## Why the Attention Module has Query, Key, and Value
 
-- `Embedding Size`
-- `Query Size` (which is equal to `Key Size` and `Value Size`)
-- `Number of Attention Heads`
-- `Batch Size`
+- Enable the `Attention Module` to gain more parameters that is able to tune the creating of the `word vectors`
 
-## Multiple Attention Heads
 
-- Multiple Attention Heads empower transformer to encoder multiple relationships and nuances for each word
-    - Due to the `logicall split`, separate sections of `Embedding` can learn different aspects of the meanings of the word, thereby allowing the transformer to capture richer representation of the sequence
-- The Attention module repeats its computations multiple times in parallel across `Query`, `Key`, and `Value` branches
-- The weights of `Query`, `Key`, and `Value` share the same `linear layer` but are `logically splitted`
-    - The `logical split` enables the `linear layer` to operate on their own logical section of the data matrix for `Query`, `Key`, and `Value` respectively
-    - The `logical split` is done by choosing the `Query Size`, where *Query Size = Embedding Size / Number of Heads*
-- Merging the multiple attention heads consists of two steps:
-    - Reshape the Attention Score matrix from `(Batch Size, Number of Head, Length of Sequence, Query Size)` to `(Batch Size, Length of Sequence, Number of Head, Query Size)`
-    - Collapse the Head dimension by reshaping to `(Batch Size, Length of Sequence, Number of Head * Query Size)` which is also known as `(Batch Size, Length of Sequence, Embedding Size)`
+## Query, Key, and Value
 
-![attention_score_merge](./img/attention_score_merge.webp)
+| Item        | Notion        | Interpretation        |
+| -----------  | -----------  | -----------  |
+| `Query` | Query value of the `Query Word` | The word for which we are calculating `Attention` |
+| `Key` | Key value of the `Key Word` | The word to which we are paying `Attention` |
+| `Value` | Encoded value of every `Key Word` | The word to which we are paying `Attention`  |
+
+
+![attention_score_one_word](./img/attention_score_one_word.webp)
 
 (Image Retrieved from [1])
 
 
-## End-to-end Multi-head Attention
+## Attention Score Matrix
 
-![end_to_end_multi-head_attention](./img/end_to_end_multi-head_attention.webp)
+- Each row corresponds to one word in the source sequence
+
+*NOTE:* The image below sets the `embedding size` to be 1
+
+![attention_score_matrix](./img/attention_score_matrix.webp)
 
 (Image Retrieved from [1])
 
 
 ## References
-[1] K. Doshi, “Transformers Explained Visually (Part 3): Multi-head Attention, deep dive,” Medium, Jun. 03, 2021. https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853
+[1] K. Doshi, “Transformers Explained Visually — Not just how, but Why they work so well,” Medium, Jun. 08, 2021. https://towardsdatascience.com/transformers-explained-visually-not-just-how-but-why-they-work-so-well-d840bd61a9d3
