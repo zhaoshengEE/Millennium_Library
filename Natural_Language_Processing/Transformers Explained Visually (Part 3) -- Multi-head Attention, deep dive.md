@@ -1,53 +1,45 @@
 # Transformers Explained Visually (Part 3) Multi-head Attention, deep dive<sup>[1]</sup>
 
 
-## Transformer Architecture
+## Attention Layer
 
-![transformer_architecture](./img/transformer_architecture.png)
+- **Self-attention in the Encoder / Decoder**
+    - The encoded representation of each word in the `input sequence` / `target sequence`, which captures the meaning and position of each word, is the input of `Query`, `Key`, `Value` in the `Self-attention` in the first `Encoder` / `Decoder`
+    - The output from the `Self-attention` in the first `Encoder` / `Decoder` entails an encoded representation for each word in the `input sequence` / `target sequence`, along with the `attention score` for each word
+- **Encoder-Decoder-attention in the Decoder**: 
+    - Generate a representation of both the `input sequence` and `target sequence` 
+    - Produce `attention scores` for each `target sequence` word, which also captures the influence of the `attention scores` from the `input sequence`
+
+
+## Attention Hyperparameters
+
+- `Embedding Size`
+- `Query Size` (which is equal to `Key Size` and `Value Size`)
+- `Number of Attention Heads`
+- `Batch Size`
+
+## Multiple Attention Heads
+
+- Multiple Attention Heads empower transformer to encoder multiple relationships and nuances for each word
+    - Due to the `logicall split`, separate sections of `Embedding` can learn different aspects of the meanings of the word, thereby allowing the transformer to capture richer representation of the sequence
+- The Attention module repeats its computations multiple times in parallel across `Query`, `Key`, and `Value` branches
+- The weights of `Query`, `Key`, and `Value` share the same `linear layer` but are `logically splitted`
+    - The `logical split` enables the `linear layer` to operate on their own logical section of the data matrix for `Query`, `Key`, and `Value` respectively
+    - The `logical split` is done by choosing the `Query Size`, where *Query Size = Embedding Size / Number of Heads*
+- Merging the multiple attention heads consists of two steps:
+    - Reshape the Attention Score matrix from `(Batch Size, Number of Head, Length of Sequence, Query Size)` to `(Batch Size, Length of Sequence, Number of Head, Query Size)`
+    - Collapse the Head dimension by reshaping to `(Batch Size, Length of Sequence, Number of Head * Query Size)` which is also known as `(Batch Size, Length of Sequence, Embedding Size)`
+
+![attention_score_merge](./img/attention_score_merge.webp)
 
 (Image Retrieved from [1])
 
 
-## Before Embedding
+## End-to-end Multi-head Attention
 
-- The text sequence is mapped into `numeric word IDs` through the `Tokenizer`
-
-
-## Embedding
-
-- The `embedding` layer maps each input word into an `embedding vector`, which is a riched representation of the meaning of that word
-- `Transformer` needs two things about each word -- *the meaning of the word* and *the position of that word in the sequence*.
-    - `RNN` implements a loop where each word is input sequentially, it implicitly knows the position of each word
-- The `Embedding layer` encodes the *meaning of the word*, whereas the `Position Encoding layer` encodes the *position of the word*
-- The two encoded features is added together before feeding into the `Encoder` or `Decoder`
-- Both `Embedding layer` and `Position Encoding layer` generate feature in 3D matrix with dimension of `(number of samples, sequence length, embedding size)`. And this shape is preserved all through the `Transformer` until it is reshaped by the `final Output layer`
-
-
-## Attention
-
-- **Self-attention in the Encoder and Decoder**: the `input sequence` and `target sequence` pay attention to itself
-- **Encoder-Decoder-attention in the Decoder**: the `target sequence` pays attention to the `input sequence`
-- The `Attention layer` takes the input in the form of three parameters: `Query`, `Key`, and `Value`, which carry an encoded representation of each word in the sequence
-- There are multiple `linear layers`/ `linear head` to generate multiple `attention scores`. The computation of the `attention scores` is based on the formula below:
-
-![attention_score](./img/attention_score.webp)
+![end_to_end_multi-head_attention](./img/end_to_end_multi-head_attention.webp)
 
 (Image Retrieved from [1])
-
-## Attention Masks
-
-The `attention masks` serve in two ways:
-- **In the Encoder Self-attention and in the Encoder-Decoder-attention:** 
-    - Zero attention outputs where there is `padding` in the input sentences
-    - Ensure the padding does not contribute to the self-attention
-- **In the Decoder Self-attention:** 
-    - Prevent the decoder from peeking ahead at the rest of the `target sequence` when predicting the next word
-
-
-## Linear & Softmax
-
-- `Linear layer`: Project the decoded vector into `scores` / `logits`, with a value for each unique word in the traget vocabulary
-- `Softmax layer`: Turn the `logits` into `probabilities` (which add up to 1)
 
 
 ## References
