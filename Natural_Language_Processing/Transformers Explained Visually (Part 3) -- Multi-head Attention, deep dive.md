@@ -1,4 +1,4 @@
-# Transformers Explained Visually (Part 2): How it works, step-by-step<sup>[1]</sup>
+# Transformers Explained Visually (Part 3) Multi-head Attention, deep dive<sup>[1]</sup>
 
 
 ## Transformer Architecture
@@ -28,7 +28,7 @@
 - **Self-attention in the Encoder and Decoder**: the `input sequence` and `target sequence` pay attention to itself
 - **Encoder-Decoder-attention in the Decoder**: the `target sequence` pays attention to the `input sequence`
 - The `Attention layer` takes the input in the form of three parameters: `Query`, `Key`, and `Value`, which carry an encoded representation of each word in the sequence
-- There are multiple `heads` to generate multiple `attention scores`. The computation of the `attention scores` is based on the formula below:
+- There are multiple `linear layers`/ `linear head` to generate multiple `attention scores`. The computation of the `attention scores` is based on the formula below:
 
 ![attention_score](./img/attention_score.webp)
 
@@ -51,4 +51,4 @@ The `attention masks` serve in two ways:
 
 
 ## References
-[1] K. Doshi, “Transformers Explained Visually (Part 2): How it works, step-by-step,” Medium, Jun. 03, 2021. https://towardsdatascience.com/transformers-explained-visually-part-2-how-it-works-step-by-step-b49fa4a64f34
+[1] K. Doshi, “Transformers Explained Visually (Part 3): Multi-head Attention, deep dive,” Medium, Jun. 03, 2021. https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853
