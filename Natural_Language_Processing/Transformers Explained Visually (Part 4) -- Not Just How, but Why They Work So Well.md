@@ -1,4 +1,4 @@
-# Transformers Explained Visually (Part 3)： Multi-head Attention, deep dive<sup>[1]</sup>
+# Transformers Explained Visually (Part 3) Multi-head Attention, deep dive<sup>[1]</sup>
 
 
 ## Attention Layer
