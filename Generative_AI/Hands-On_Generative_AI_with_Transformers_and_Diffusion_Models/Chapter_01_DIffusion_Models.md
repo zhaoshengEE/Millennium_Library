@@ -37,7 +37,7 @@ def add_noise(x, noise, timesteps):
 
 ## Math behind Noise Adding
 
-$q(x_{t} \mid x_{t-1}) = \mathcal{N}(x_{t};\sqrt{1 - \beta_{t}} x_{t-1},\beta_{t}\bold{I})$
+$q(x_{t} \mid x_{t-1}) = \mathcal{N}(x_{t};\sqrt{1 - \beta_{t}} x_{t-1},\beta_{t}I)$
 
 - $\beta_{t}$ is defined for all timestamps and is used to specify how much noise is added at each step.
 - $x_{t}$ is a distribution with a mean of $\sqrt{1 - \beta_{t}} x_{t-1}$ and a variance of $\beta_{t}$.
@@ -82,6 +82,8 @@ $q(x_{t} \mid x_{t-1}) = \mathcal{N}(x_{t};\sqrt{1 - \beta_{t}} x_{t-1},\beta_{t
 
 ![unet](./img/unet.png)
 
+(Image Retrieved from [1])
+
 - Improvement of `UNet`:
     - Add more parameters
     - Add residual connections
@@ -102,30 +104,6 @@ $q(x_{t} \mid x_{t-1}) = \mathcal{N}(x_{t};\sqrt{1 - \beta_{t}} x_{t-1},\beta_{t
 | `Recurrent Interface Networks (RIN)` | <li>First mapping high-resolution inputs to a more manageable and lower-dimensional `latent` representation which is then processed by a stack of transformer blocks before being decoded back out to an image.</li> |
 
 
-
-## Pros & Cons
-
-| Pros        | Cons        |
-| -----------  | -----------  |
-| Converge the model faster since it is trained on the correct labels. | Yield a discrapancy between training and inference. |
-| Prevent gradient explosion, especially in the case of `RNN`. | Lead to poor model performance and stability. |
-
-
-## Tips
-
-1. We don't need to update the model at each timestep. Instead, we can store all the predicted output in a `Python list` and compute the losses in one go.
-
-2. Teacher forcing can be used in any `time-series forecasting model` or `autoregressive models` such as `transformer`.
-
-
-## Teacher Forcing vs Scheduled Sampling vs Normal Mode<sup>[2]</sup>
-
-- `Normal Mode`: Predict next token based on the sentenced that the model is generating.
-- `Teacher Forcing`: Predict next token based on the correct input (i.e. ground truth).
-- `Scheduled Sampling`: Sometimes uses normal mode (using the half-finished sentence the model is generating), and sometimes uses teacher-forcing (using the correct sentence to predict the next token).
-
-
 ## References
-[1] Wanshun Wong, “What is Teacher Forcing?,” Medium, Oct. 15, 2019. https://towardsdatascience.com/what-is-teacher-forcing-3da6217fed1c
 
-[2] “Teacher Forcing vs Scheduled Sampling vs Normal Mode — Learning Machine,” rentruewang.github.io. https://rentruewang.github.io/learning-machine/layers/transformer/training/teacher/teacher.html (accessed Jun. 08, 2023).
+[1] “Hands-On Generative AI with Transformers and Diffusion Models [Book],” www.oreilly.com. https://www.oreilly.com/library/view/hands-on-generative-ai/9781098149239/ (accessed Jul. 07, 2023).
