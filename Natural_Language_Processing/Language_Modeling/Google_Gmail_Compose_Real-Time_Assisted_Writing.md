@@ -54,7 +54,7 @@
 ## Evaluation Metrics
 
 - `Log Perplexity`
-    - $Log \: Perplexity(x) = -\sum_{x} p(x) \log p(x)$
+    - $Log  Perplexity(x) = -\sum_{x} p(x) \log p(x)$
     - A modle with lower perplexity assigns higher probabilities to the true target tokens.
 - `ExactMatch@N`
     - A predicted phrase that is N words long, the percentage of predicted phrase that exactly matches the first N words in the ground truth text.
