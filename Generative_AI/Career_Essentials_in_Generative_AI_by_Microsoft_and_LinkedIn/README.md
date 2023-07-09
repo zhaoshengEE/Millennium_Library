@@ -14,3 +14,5 @@
 | Section 3. Streamlining Your Work with Microsoft Bing Chat |
 | Section 4. Ethics in the Age of Generative AI  |
 | Section 5. Introduction to Artificial Intelligence |
+
+![certificate](./img/CertificateOfCompletion_Career%20Essentials%20in%20Generative%20AI%20by%20Microsoft%20and%20LinkedIn.jpg)
