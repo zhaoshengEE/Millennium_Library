@@ -34,6 +34,7 @@
 ### Why Do We Need Batch
 
 - In a nutshell, for doing more greadient steps (i.e. updating model parameters) under the same computational budget.
+- Enable us to operate the datasets whose size is orders of magnitude greater than that of the computing device's memory.
 
 | Gradient | Weight Update |
 |:--:|:--:|
