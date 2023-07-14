@@ -4,12 +4,14 @@
 
 (Image Retrieved from [1])
 
-|  |  |
-| :-------------------- | :-------------------- |
-| **Chapter 1**. Machine Learning | **Chapter 2**. Efficient Computation |
-| **Chapter 3**. Training | **Chapter 4**. Model Components   |
-| **Chapter 5**. Architectures | **Chapter 6**. Prediction |
-| **Chapter 7**. Synthesis |
+|  |  |  |
+| :-------------------- | :-------------------- | :-------------------- |
+| **Part I. Foundations**  |||
+| **Chapter 1**. Machine Learning | **Chapter 2**. Efficient Computation | **Chapter 3**. Training |
+| **Part II. Deep Models**  |||
+| **Chapter 4**. Model Components   | **Chapter 5**. Architectures | |
+| **Part III. Applications**  |||
+|**Chapter 6**. Prediction | **Chapter 7**. Synthesis | |
 
 
 ## References
