@@ -44,7 +44,7 @@ Can move between classes `manually` or using `S3 Lifecycle Rules`
 
 | Amazon S3 Glacier Instant Retrieval | Amazon S3 Glacier Flexible Retrieval | Amazon S3 Glacier Deep Archive |
 |:-----|:-----|:-----|
-||<li>Expedited (1 - 5 mins)</li>Standard (3 - 5 hours)<li></li><li>Bulk (5 - 12 hours)</li>|<li>For long term storage</li><li>Take the most  time to retrieve data (`first byte latency`)</li><li>More cost-effective than `S3 Standard - IA` and `S3 One Zone - IA`</li>|
+||<li>Expedited (1 - 5 mins)</li><li>Standard (3 - 5 hours)</li><li>Bulk (5 - 12 hours)</li>|<li>For long term storage</li><li>Take the most  time to retrieve data (`first byte latency`)</li><li>More cost-effective than `S3 Standard - IA` and `S3 One Zone - IA`</li>|
 
 - `Amazon S3 Intelligent Tiering`
     - Move object automatically between Access Tiers based on usage
