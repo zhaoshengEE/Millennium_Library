@@ -33,22 +33,19 @@ Can move between classes `manually` or using `S3 Lifecycle Rules`
 - `Amazon S3 Infrequent Access`
     - For data that is less frequently accessed, but requires **rapid access** when needed.
     - Lower cost than S3 Standard
-    - `Amazon S3 Standard - Infrequent Access`
-        - Higher storage cost and lower retrieval cost than `Glacier`
-    - `Amazon S3 One Zone - Infrequent Access`
-        - 20% cheaper than `S3 Standard - Infrequent Access`
+
+| Amazon S3 Standard - Infrequent Access | Amazon S3 One Zone - Infrequent Access |
+|:-----|:-----|
+|<li>Higher storage cost and lower retrieval cost than `Glacier`</li>|<li>20% cheaper than `S3 Standard - Infrequent Access`</li>|
+
 - `Amazon S3 Glacier Storage Classes`
     - Low-cost object storage, plus object retrieval cost
     - Higher retrieval cost and lower storage cost than `Standard - IA`
-    - `Amazon S3 Glacier Instant Retrieval`
-    - `Amazon S3 Glacier Flexible Retrieval`
-        - Expedited (1 - 5 mins)
-        - Standard (3 - 5 hours)
-        - Bulk (5 - 12 hours)
-    - `Amazon S3 Glacier Deep Archive` 
-        - For long term storage
-        - Take the most  time to retrieve data (`first byte latency`)
-        - More cost-effective than `S3 Standard - IA` and `S3 One Zone - IA`
+
+| Amazon S3 Glacier Instant Retrieval | Amazon S3 Glacier Flexible Retrieval | Amazon S3 Glacier Deep Archive |
+|:-----|:-----|:-----|
+||<li>Expedited (1 - 5 mins)</li>Standard (3 - 5 hours)<li></li><li>Bulk (5 - 12 hours)</li>|<li>For long term storage</li><li>Take the most  time to retrieve data (`first byte latency`)</li><li>More cost-effective than `S3 Standard - IA` and `S3 One Zone - IA`</li>|
+
 - `Amazon S3 Intelligent Tiering`
     - Move object automatically between Access Tiers based on usage
     - **There are no retrieval charges in S3 Intelligent Tiering**
