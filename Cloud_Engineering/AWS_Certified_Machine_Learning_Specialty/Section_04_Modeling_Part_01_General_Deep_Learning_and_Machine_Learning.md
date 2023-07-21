@@ -190,7 +190,7 @@
 
 | Specificity | F1 Score | RMSE |
 |:----|:----|:----|
-|$\frac{TN}{TN + FP}$| $\frac{2TP}{2TP + FP + FN}$<br><br>$2\cdot\frac{Precision \cdot Recall}{Precision + Recall}$ | $\sqrt{\frac{\sum_{i=1}^{n} (x_{i} - \hat{x_{i}})^2}{N}}$ |
+|$\frac{TN}{TN + FP}$| $\frac{2TP}{2TP + FP + FN}$<br><br>$2\cdot\frac{Precision \cdot Recall}{Precision + Recall}$ | $\sqrt{\frac{\Sigma_{i=1}^{N} (x_{i} - \hat{x_{i}})^2}{N}}$ |
 | True Negative Rate | Harmonic mean of `precision` and `sensitivity` | `Accuracy` measurement |
 | | When you care about `precision` and `recall` | Only care about right & wrong answers |
 
