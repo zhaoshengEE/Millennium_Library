@@ -60,19 +60,19 @@
 
 | Visual Types | Screenshot | Description |
 |:-----|:-----|:-----|
-| AutoGraph |  | <li>The service selects the most appropriate visualization based on the properties of data</li> |
-| Bar Chart | ![bar_chart](./img/bar_chart.png) | <li>For comparison and distirbution (histograms)</li> |
-| Line Chart | ![line_chart](./img/line_chart.png) | <li>For changes over time</li> |
-| Scatter Plot | ![scatter_plot](./img/scatter_plot.png) | <li>For correlation</li> |
-| Heat Map | ![heat_map](./img/heat_map.png) | <li>For correlation</li> |
-| Pie Chart | ![pie_chart](./img/pie_chart.png) | <li>For aggregation</li> |
-| Tree Map | ![tree_map](./img/tree_map.png) | <li>For heirarchical aggregation</li> |
-| Pivot Table | ![pivot_table](./img/pivot_table.png) | <li>For tabular data</li><li>Think of pivot table if you are dealing with multi-dimensional data and apply statistical functions to it</li> |
-| KPI | ![kpi](./img/kpi.png) | <li>Compare key value to its target value</li> |
-| Geospatial Chart | ![geospatial_chart](./img/geospatial_chart.png) |  |
-| Donut Chart | ![dnout_chart](./img/donut_chart.png) | <li>Percentage of total amount</li> |
-| Gauge Chart | ![gauge_chart](./img/gauge_chart.png) | <li>Compare values in a measure</li> |
-| Word Cloud | ![word_cloud](./img/word_cloud.png) | <li>Word and phrase frequency</li> |
+| `AutoGraph` |  | <li>The service selects the most appropriate visualization based on the properties of data</li> |
+| `Bar Chart` | ![bar_chart](./img/bar_chart.png) | <li>For comparison and distirbution (histograms)</li> |
+| `Line Chart` | ![line_chart](./img/line_chart.png) | <li>For changes over time</li> |
+| `Scatter Plot` | ![scatter_plot](./img/scatter_plot.png) | <li>For correlation</li> |
+| `Heat Map` | ![heat_map](./img/heat_map.png) | <li>For correlation</li> |
+| `Pie Chart` | ![pie_chart](./img/pie_chart.png) | <li>For aggregation</li> |
+| `Tree Map` | ![tree_map](./img/tree_map.png) | <li>For heirarchical aggregation</li> |
+| `Pivot Table` | ![pivot_table](./img/pivot_table.png) | <li>For tabular data</li><li>Think of pivot table if you are dealing with multi-dimensional data and apply statistical functions to it</li> |
+| `KPI` | ![kpi](./img/kpi.png) | <li>Compare key value to its target value</li> |
+| `Geospatial Chart` | ![geospatial_chart](./img/geospatial_chart.png) |  |
+| `Donut Chart` | ![dnout_chart](./img/donut_chart.png) | <li>Percentage of total amount</li> |
+| `Gauge Chart` | ![gauge_chart](./img/gauge_chart.png) | <li>Compare values in a measure</li> |
+| `Word Cloud` | ![word_cloud](./img/word_cloud.png) | <li>Word and phrase frequency</li> |
 
 (Images Retrieved from [1])
 
@@ -114,7 +114,7 @@
 
 |||
 |:---|:---|
-| ![hadoop](./img/hadoop.png)| <li>`MapReduce`: A software framework for easily writing applications that process vast amount of data in parallel</li><li>`YARN`(Yet Another Resource Negotiator): Centrally manage cluster resources</li><li>`HDFS`: Distributed scalable file system for Hadoop</li> |
+| ![hadoop](./img/hadoop.png)| <li>`MapReduce`: A software framework for easily writing applications that process vast amount of data in parallel</li><li>`YARN` (Yet Another Resource Negotiator): Centrally manage cluster resources</li><li>`HDFS`: Distributed scalable file system for Hadoop</li> |
 
 (Image Retrieved from [1])
 
@@ -153,33 +153,33 @@
 
 ## :horse: Imputing Missing Data
 
-- Mean Replacement
+- **Mean Replacement**
     - Replace missing values with the mean value from the rest of the column
     - Fast & easy, won't affect mean of smaple size of overall dataset
     - Median may be a better choice than mean when outliers are present
     - *Tip*: If the exam is asking you what is the best way to impute missing data, dropping data probably is not the right answer
-- Dropping
+- **Dropping**
     - If not many rows contain missing data and dropping those rows doesn't bias your data
     - It is the quickest and easiest thing to do, but probably never going to be the best approach
     - *Tip*: If the exam is asking you what is the best way to impute missing data, dropping data probably is not the right answer
-- Machine Learning
+- **Machine Learning**
 
 |||
 |:---|:---|
-| KNN | <li>Find K nearest (most similar) rows and average their values</li><li>Assume numerical data, not categorical</li> |
-| Deep Learning | <li>Work well for categorical data</li> |
-| Regression | <li>Find linear or non-linear relationships between the missing feature and other features</li><li>Most advanced technique: `MICE` (Multiple Imputation by Chained Equations)</li> |
-- Collect more data
+| `KNN` | <li>Find K nearest (most similar) rows and average their values</li><li>Assume numerical data, not categorical</li> |
+| `Deep Learning` | <li>Work well for categorical data</li> |
+| `Regression` | <li>Find linear or non-linear relationships between the missing feature and other features</li><li>Most advanced technique: `MICE` (Multiple Imputation by Chained Equations)</li> |
+- **Collect More Data**
 
 
 ## :racehorse: Handling Unbalanced Data
 
 |||
 |:---|:---|
-| Oversampling | <li>Duplicate samples from the minority class</li> |
-| Undersampling | <li>Instead of creating more minority class samples, remove majority class ones</li> |
-| SMOTE (Synthetic Minority Over-sampling TEchnique) | <li>Artificially generate  new samples of the minority class using nearest neighbors</li><li>Generally better than `oversampling` and `undersampling`</li> |
-| Adjusting Thresholds | <li>For example, the threshold of probability at which point you will flag something as the positive case (fraud)</li><li>Positive means the things you are testing for is what happend</li> |
+| `Oversampling` | <li>Duplicate samples from the minority class</li> |
+| `Undersampling` | <li>Instead of creating more minority class samples, remove majority class ones</li> |
+| `SMOTE (Synthetic Minority Over-sampling TEchnique)` | <li>Artificially generate  new samples of the minority class using nearest neighbors</li><li>Generally better than `oversampling` and `undersampling`</li> |
+| `Adjusting Thresholds` | <li>For example, the threshold of probability at which point you will flag something as the positive case (fraud)</li><li>Positive means the things you are testing for is what happend</li> |
 
 
 ## :camel: Handling Outliers
@@ -190,11 +190,11 @@
 
 |||
 |:---|:---|
-| Binning | <li>Bucket observations together based on ranges of values</li><li>Transform `numeric data` to `ordinal data`, along with covering some imprecision in the `numerical data`</li><li>Especially useful when there is uncertainty in the measurements</li> |
-| Transforming | <li>Applying some function to a feature to make it better suited for training</li><li>That being said, it is not necessary to replace data with transformation</li> |
-| Encoding | <li>Transform data into some new representation required by the model</li><li>`One-Hot Encoding`</li> |
-| Scaling / Normalization | <li>Most models require feature data to at least be scaled to comparable values</li> |
-| Shuffling | <li>Avoid models from learning residual signals in the training data resulting from the order in which they were collected</li> |
+| `Binning` | <li>Bucket observations together based on ranges of values</li><li>Transform `numeric data` to `ordinal data`, along with covering some imprecision in the `numerical data`</li><li>Especially useful when there is uncertainty in the measurements</li> |
+| `Transforming` | <li>Applying some function to a feature to make it better suited for training</li><li>That being said, it is not necessary to replace data with transformation</li> |
+| `Encoding` | <li>Transform data into some new representation required by the model</li><li>`One-Hot Encoding`</li> |
+| `Scaling / Normalization` | <li>Most models require feature data to at least be scaled to comparable values</li> |
+| `Shuffling` | <li>Avoid models from learning residual signals in the training data resulting from the order in which they were collected</li> |
 
 
 ## :sheep: SageMaker Ground Truth
