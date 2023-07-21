@@ -1,5 +1,4 @@
-# Section 4. Modeling 
-# Part 1. General Deep Learning and Machine Learning
+# Section 4. Modeling -- General Deep Learning and Machine Learning
 
 
 # :one: Activation Functions
