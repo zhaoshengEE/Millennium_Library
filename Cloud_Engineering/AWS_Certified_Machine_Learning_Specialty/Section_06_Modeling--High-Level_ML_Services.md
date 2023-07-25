@@ -50,11 +50,58 @@
 
 ## :whale: Amazon Personalize Terminology
 
+- Datasets
+    - Users, Items, Interactions
+- Recipes
+    - `USER_PERSONALIZATION`
+    - `PERSONALIZED_RANKING`
+    - `RELATED_ITEMS`
+    - `USER_SEGMENTATION`
+- Solutions
+    - Train the model
+    - Optimize for relevance as well as your additional objectives
+    - Hyperparameter Optimization (HPO)
+- Campaigns
+    - Deploy your solution version
+    - Deploy capacity for generating real-time recommendations
+
+
 ## :whale2: Amazon Personalize Hyperparameters
+
+There are a bunch of knobs and dials of `Amazon Personalize`
+
+- User-Personalization, Personalized-Ranking
+    - `hidden_dimension` (HPO)
+    - `bptt` (back-propagation through time - RNN)
+    - `recency_mask` (weights recent events)
+    - `min/max_user_history_length_percentile` (filter out robots)
+    - `exploration_weight`, ranging from 0 to 1, control relevance
+    - `exploration_item_age_cut_off`, how far back in time you go
+- Similary-items
+    - `item_id_hidden_dim` (HPO)
+    - `item_metadata_hidden_dim` (HPO with min & max range specified)
+
 
 ## :dolphin: Maintaining Relevance
 
+- Keep your datasets current
+    - Incremental data import
+- Use `PutEvents` operation to feed in real-time user behavior
+- Retrain the model
+    - `New solution version`
+    - Update every 2 hours **by default**
+    - Should do a full retrain (set `trainingMode` = FULL) weekly
+
+
 ## :cow2: Amazon Personalize Security
+
+- Data not shared across accounts
+- Data may be encrypted with `KMS`
+- Data may be encrypted at rest in your region (SSE-S3)
+- Data in transit between your account and Amazon's internal systems encrypted with `TLS 1.2`
+- Access control via `IAM`
+- Data in `S3` must have appropriate `bucket policy` for `Amazon Personalize` to process it
+- Monitoring & Logging via `CloudWatch` and `CloudTrail`
 
 
 # :three: Other AWS Services
