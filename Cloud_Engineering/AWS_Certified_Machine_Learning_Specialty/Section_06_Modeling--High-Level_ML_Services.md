@@ -104,7 +104,7 @@ There are a bunch of knobs and dials of `Amazon Personalize`
 - Monitoring & Logging via `CloudWatch` and `CloudTrail`
 
 
-# :three: Other AWS Services
+# :three: Other AWS Services 
 
 |||
 |:---:|:-------|
