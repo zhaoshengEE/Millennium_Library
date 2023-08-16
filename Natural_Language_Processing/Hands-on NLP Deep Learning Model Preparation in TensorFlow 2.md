@@ -64,12 +64,53 @@ trainvalid_data_post = pad_sequences(train_sequences, maxlen=MAX_SEQUENCE_LENGTH
 
 **Essence**: Convert word to vectors
 
+- Some famous word embeddings are `word2vec`, `GloVe`, `FastText`
+- `spaCy` provides some pretrained word embeddings
+
+```python
+import spacy
+# if first use, download en_core_web_sm
+nlp_sm = spacy.load("en_core_web_sm") # 96-dimension vector
+nlp_md = spacy.load("en_core_web_md") # 300-dimension vector
+nlp_lg = spacy.load("en_core_web_lg") # 300-dimension vector
+```
+
+- Beyond that, pretrained word embeddings is shiny in handling OOV
+
+| `en_core_web_sm` | `en_core_web_md` & `en_core_web_lg` |
+|:----:|:----:|
+| Always return non-zero vectors. | Return a zero-vector when the token is not in the embedding model. |
+| Not as precise as larger models like `en_core_web_md` or `en_core_web_lg` | Precision is high. |
+
+- `Better something-not-precise than nothing-at-all` strategy
 
 ## Embedding Layer in `TensorFlow`
 
+- **Essence**: Build the bridge between the `token sequences` and `word embedding representation` through an embedding matrix (a.k.a. weights)
+
 > The key to modern NLP feature extraction: If everything works, the output of the embedding layers should represent well of the original text, with all the features storing in the word embedding weights; this is the key idea of modern NLP feature extraction.
 
+- When using a pre-trained embedding, we need to use `tf.keras.initializers.Constant`
 
+```python
+from tensorflow.keras.initializers import Constant
+from tensorflow.keras.layers import Embedding
+MAX_NUM_TOKENS = 50
+EMBEDDING_DIM = embedding_matrix.shape[1]
+MAX_SEQUENCE_LENGTH = 10
+embedding_layer = Embedding(input_dim=MAX_NUM_TOKENS,
+output_dim=EMBEDDING_DIM,
+embeddings_initializer=Constan(embedding_matrix),
+input_length=MAX_SEQUENCE_LENGTH,
+mask_zero=True,
+trainable=False)
+```
+
+- Set `trainable = False` so that hte weight of embedding will not change during training.
+    - This helps to prevent overfitting, especially when training on a relatively small dataset. 
+- Set `mask_zero = True` not only speeds up the training but also gives a better representation of the original text, especially when using RNN-type architecture.
+    - This tells sequence-processing layers that certain positions in an input are missing, and thus should be skipped when processing the data.
+- The ouput of the embedding layer should be in the shape: `[num_sequence, padded_sequence_length, embedding_vector_dim]`
 
 
 ## References
