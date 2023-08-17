@@ -1,5 +1,8 @@
 # AWS Certified Machine Learning Specialty 2023 - Hands On!
 
+|  |  |
+| :-------------------- | :-------------------- |
+| ![](./img/aws-certified-machine-learning-specialty.png)  | ![](./img/aws_certified_machine_learning_specialty_certificate.png) |
 
 This folder contains my course note when I am taking the course offered by Frank Kane and Stephane Maarek on [Udemy](https://www.udemy.com/course/aws-machine-learning/)
 
